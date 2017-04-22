@@ -26,6 +26,10 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
 ## 常用配置
 ```vim
 
+    " :bd 删除当前 buffer
+    " :1,5bw Wipe 1~5 buffer
+    " :xd 删除末尾空格
+
     map    <Leader>n  :tabnext<CR>
     " Use Tab to switch buffer
     nnoremap <Leader><Tab> :Buffers<CR>
