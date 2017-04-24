@@ -121,3 +121,7 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
     let g:multi_cursor_skip_key='<C-x>'
     let g:multi_cursor_quit_key='<Esc>'
 ```
+
+## 技巧
+- fzf
+    - 在 Ag 窗口中使用 Tab 键可以选择多个文件，敲回车后选择的文件自动加载到 QuickFix 窗口
