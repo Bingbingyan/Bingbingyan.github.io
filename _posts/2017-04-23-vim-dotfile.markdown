@@ -77,9 +77,6 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
     let g:netrw_list_hide= '.*\.pyc$'
     set wildignore=*.pyc
 
-    " 格式 Json 字符串
-    map <Leader>fj :%!python -m json.tool<CR>
-
     "tabs
     nmap <leader>tn :tabnew<cr>
     nmap <leader>tc :tabclose<cr>
