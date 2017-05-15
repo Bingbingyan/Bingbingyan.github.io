@@ -120,8 +120,32 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
     let g:multi_cursor_prev_key='<C-p>'
     let g:multi_cursor_skip_key='<C-x>'
     let g:multi_cursor_quit_key='<Esc>'
+
+    " 格式 Json 字符串
+    " map <Leader>fj :%!python -m json.tool<CR>
+    function FormatJSON(...)
+      let code="\"
+            \ var i = process.stdin, d = '';
+            \ i.resume();
+            \ i.setEncoding('utf8');
+            \ i.on('data', function(data) { d += data; });
+            \ i.on('end', function() {
+            \     console.log(JSON.stringify(JSON.parse(d), null,
+            \ " . (a:0 ? a:1 ? a:1 : 2 : 2) . "));
+            \ });\""
+      execute "%! node -e " . code
+    endfunction
+    map <Leader>fj :call FormatJSON(v:count)<CR>
 ```
 
 ## 技巧
 - fzf
     - 在 Ag 窗口中使用 Tab 键可以选择多个文件，敲回车后选择的文件自动加载到 QuickFix 窗口
+- 获取当前文件的路径和文件名
+`!echo %:p`
+- 获取当前文件的路径
+`!echo %:p:h`
+>%: 当前文件的相对路径
+>%:p 当前文件的绝对路径
+>%:p:h 当前文件的绝对目录
+>%:h 当前文件的相对目录
