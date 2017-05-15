@@ -122,22 +122,6 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
     let g:multi_cursor_quit_key='<Esc>'
 
     " 格式 Json 字符串
-    " map <Leader>fj :%!python -m json.tool<CR>
-    function FormatJSON(...)
-      let code="\"
-            \ var i = process.stdin, d = '';
-            \ i.resume();
-            \ i.setEncoding('utf8');
-            \ i.on('data', function(data) { d += data; });
-            \ i.on('end', function() {
-            \     console.log(JSON.stringify(JSON.parse(d), null,
-            \ " . (a:0 ? a:1 ? a:1 : 2 : 2) . "));
-            \ });\""
-      execute "%! node -e " . code
-    endfunction
-    map <Leader>fj :call FormatJSON(v:count)<CR>
-
-    " 格式 Json 字符串
     function FormatJSON(...)
       let code="\"
             \ var i = process.stdin, d = '';
