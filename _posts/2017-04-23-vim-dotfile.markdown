@@ -145,3 +145,6 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
 >%:p 当前文件的绝对路径
 >%:p:h 当前文件的绝对目录
 >%:h 当前文件的相对目录
+- iw 与 aw 区别
+    - iw: 光标所在位置当前单词
+    - aw: 光标所在位置当前单词，及后面一个空格
