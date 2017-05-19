@@ -148,3 +148,7 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
 - iw 与 aw 区别
     - iw: 光标所在位置当前单词
     - aw: 光标所在位置当前单词，及后面一个空格
+- Ctrl+o: 在 Insert 模式下，执行一次 Normal 模式的命令，并回到 Insert 模式
+- 【I: 显示当前文档中，包含当前光标所在单词的行
+- ma: 在当前光标所在位置添加标签：a
+- set paste: 粘贴代码时，不自动缩进
