@@ -1,5 +1,15 @@
 # XPath 笔记
 
+| XPath           | Result                                                                 |
+| -------         | --------                                                               |
+| bookstore       | 选取 bookstores 元素的所有子节点                                       |
+| /bookstore      | 选取根元素：bookstores                                                 |
+| bookstores/book | 选取所有属于 bookstore 的子元素：book                                  |
+| //book          | 选取所有 book 元素，不管它们在文档中的位置                             |
+| bookstore//book | 选取所有属于 bookstore 的 book 子元素，不管位于 bookstore 下的什么位置 |
+| //@lang         | 选取所有名为 lang 的属性                                               |
+
+
 ## 根据节点属性定位节点
 > //a[@href="/XXX"]
 
