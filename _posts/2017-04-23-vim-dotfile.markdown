@@ -93,7 +93,7 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
     noremap <Left> <Nop>
     noremap <Right> <Nop>
 
-    "高亮行位空格
+    "高亮行尾空格
     highlight ExtraWhitespace ctermbg=red guibg=red
     match ExtraWhitespace /\s\+$/
     autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
