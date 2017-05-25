@@ -81,6 +81,12 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
     nmap <leader>tn :tabnew<cr>
     nmap <leader>tc :tabclose<cr>
 
+    " 直接删除，不放到剪切板
+    nnoremap d "_d
+    vnoremap d "_d
+    vnoremap D "_D
+    vnoremap p "_dhp
+
     " disable arrow keys in normal mode
     noremap <Up> <Nop>
     noremap <Down> <Nop>
