@@ -158,3 +158,4 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
 - 【I: 显示当前文档中，包含当前光标所在单词的行
 - ma: 在当前光标所在位置添加标签：a
 - set paste: 粘贴代码时，不自动缩进
+- 删除所有空行：g/^$/d
