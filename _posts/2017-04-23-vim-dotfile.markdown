@@ -21,6 +21,9 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
 
     " 从 Insert Mode 切换到 Normal Mode 时 自动将输入法切换为英文
     Plug 'CodeFalling/fcitx-vim-osx'
+
+    " 可视化剪贴板
+    Plug 'vim-scripts/YankRing.vim'
 ```
 
 ## 常用配置
@@ -29,6 +32,11 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
     " :bd 删除当前 buffer
     " :1,5bw Wipe 1~5 buffer
     " :xd 删除末尾空格
+
+    " :YRShow 显示剪贴板的内容
+    " :vs 纵向分割窗口
+    " :split 横向分割窗口
+
 
     map    <Leader>n  :tabnext<CR>
     " Use Tab to switch buffer
