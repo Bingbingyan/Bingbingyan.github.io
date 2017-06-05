@@ -146,6 +146,9 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
       execute "%! node -e " . code
     endfunction
     map <Leader>fj :call FormatJSON(v:count)<CR>
+
+    " 翻译当前光标所在单词
+    nmap <Leader>t :!echo --==<C-R><C-w>==-- ;ici <C-R><C-W><CR>
 ```
 
 ## 技巧
