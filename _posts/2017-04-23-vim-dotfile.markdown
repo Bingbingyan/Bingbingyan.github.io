@@ -171,3 +171,6 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
 - set paste: 粘贴代码时，不自动缩进
 - 删除所有空行：g/^$/d
 - :CtrlP：快速打开pwd下的文件
+- 复制查询结果到剪切板
+    - :g/XXX/y A
+    - :let @+ = @
