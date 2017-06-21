@@ -147,6 +147,21 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
     endfunction
     map <Leader>fj :call FormatJSON(v:count)<CR>
 
+    function JQFilter(name)
+      echom "Example: '.data[].areaname'"
+      " 筛选条件不为空则执行筛选
+      if strlen(a:name)>0
+          silent execute '!clear'
+          " 复制筛选结果到剪贴板
+          silent execute '!cat %|jq ' a:name '|pbcopy'
+          " 打印出筛选结果
+          execute '!cat %|jq ' a:name 
+      endif
+    endfunction
+    " 调用 jq 筛选 Json 内容
+    " !cat % | jq '.data[].areaname'
+    nnoremap <Leader>jq :call JQFilter(input('jq/'))<CR>
+
     " 翻译当前光标所在单词
     nmap <Leader>t :!echo --==<C-R><C-w>==-- ;ici <C-R><C-W><CR>
 ```
