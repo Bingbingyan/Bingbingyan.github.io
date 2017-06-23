@@ -17,6 +17,7 @@ headers = {"Content-Type": "application/json;charset=UTF-8",
 "Accept": "application/json, text/plain, */*",
 "User-Agen": agent }
 
+# 需要设置 Header
 res = requests.post(url, data=json.dumps(data), headers=headers)
 # json = data 不需要设置 Content-Type = json 的 Header
 res = requests.post(url, json=data)
