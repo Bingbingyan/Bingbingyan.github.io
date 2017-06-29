@@ -185,6 +185,8 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
 - ma: 在当前光标所在位置添加标签：a
 - set paste: 粘贴代码时，不自动缩进
 - 删除所有空行：g/^$/d
+- 删除XML 中的注释：g/\s\+<!.*/d
+    - 删除以空格+<!开头的行
 - :CtrlP：快速打开pwd下的文件
 - 复制查询结果到剪切板
     - :g/XXX/y A
