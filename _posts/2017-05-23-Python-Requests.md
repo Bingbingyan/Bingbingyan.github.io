@@ -24,4 +24,7 @@ res = requests.post(url, json=data)
 
 
 ```
-
+### format Json 不将中文转换编码格式
+```python
+print(json.dumps(queryJson, indent = 4, ensure_ascii = False))
+```
