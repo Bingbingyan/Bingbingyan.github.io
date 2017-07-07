@@ -28,3 +28,11 @@ res = requests.post(url, json=data)
 ```python
 print(json.dumps(queryJson, indent = 4, ensure_ascii = False))
 ```
+
+### https request
+```python
+import requests
+import requests.packages.urllib3.util.ssl_
+requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = 'ALL'
+res = request.get("https://www.xxx.com")
+```
