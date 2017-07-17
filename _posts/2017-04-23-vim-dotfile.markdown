@@ -193,3 +193,4 @@ vim 神器配置：[space-vim](https://github.com/liuchengxu/space-vim)
     - :let @+ = @
 - ngt: 直接跳转到第 n 个 Tab
 - verbose imap <c-j>: 查看<c-j> 组合键的映射
+- :%!xxd 将文件以16进制进行编辑
