@@ -36,3 +36,12 @@ import requests.packages.urllib3.util.ssl_
 requests.packages.urllib3.util.ssl_.DEFAULT_CIPHERS = 'ALL'
 res = request.get("https://www.xxx.com")
 ```
+
+### 自定义排序规则
+
+```python
+from collections import OrderedDict
+sort_order = ['@name', '#text']
+items_orderd = [OrderedDict(sorted(item.iteritems(), key=lambda (k, v): sort_order.index(k)))
+                    for item in items]
+```
